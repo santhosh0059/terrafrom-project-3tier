@@ -1,3 +1,10 @@
+
+# Configure the AWS Provider
+provider "aws" {
+  region = "ap-south-1"
+  profile = "default"
+}
+
 #Remote backend state
 terraform {
   backend "s3" {
@@ -8,9 +15,5 @@ terraform {
   }
 }
 
-# Configure the AWS Provider
-provider "aws" {
-  region = "ap-south-1"
-  profile = "default"
-}
+
 
